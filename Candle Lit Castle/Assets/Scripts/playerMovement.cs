@@ -47,6 +47,7 @@ public class playerMovement : MonoBehaviour
         localScale.x *= -1f;
         transform.localScale = localScale;
         GameObject.Find("Player").GetComponent<playerDash>().dashPower = horizontal;
+        GameObject.Find("Player").GetComponent<playerHealth>().knockbackPower = horizontal;
     }
 
     public void Move(InputAction.CallbackContext context)

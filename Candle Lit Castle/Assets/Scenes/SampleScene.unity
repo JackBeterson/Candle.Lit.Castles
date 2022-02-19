@@ -190,7 +190,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -251,7 +251,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -11909,7 +11909,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
       cycleCount: 1
-      repeatInterval: 0.01
+      repeatInterval: 1
       probability: 1
   SizeModule:
     enabled: 0
@@ -16387,8 +16387,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDeath: {fileID: 1290147474}
   player: {fileID: 2007302977}
+  playerHurtbox: {fileID: 346068781}
+  rb: {fileID: 2007302978}
   slider: {fileID: 293735609}
   wick: {fileID: 835820138}
+  animator: {fileID: 2007302983}
+  sprite: {fileID: 2007302980}
+  knockbackPower: 1
 --- !u!114 &2007302985
 MonoBehaviour:
   m_ObjectHideFlags: 0
