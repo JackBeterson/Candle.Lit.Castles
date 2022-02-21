@@ -10,6 +10,11 @@ public class slimeMovement : MonoBehaviour
 
     private float jumpCoolCounter;
 
+    private void Start()
+    {
+        targetrb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+    }
+
     void Update()
     {
         animator.SetFloat("VelocityY", rb.velocity.y);

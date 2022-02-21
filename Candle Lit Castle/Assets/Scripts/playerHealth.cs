@@ -2,12 +2,14 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class playerHealth : MonoBehaviour
 {
     [SerializeField] private ParticleSystem playerDeath;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject playerHurtbox;
+    [SerializeField] private GameObject dashTrail;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Slider slider;
     [SerializeField] private GameObject wick;
@@ -17,6 +19,7 @@ public class playerHealth : MonoBehaviour
 
     private float health = 3;
     public float knockbackPower = 1;
+    public bool dashing = false;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,7 +27,7 @@ public class playerHealth : MonoBehaviour
         {
             Death();
         }
-        else if (other.tag == "OneDMG")
+        else if (other.tag == "OneDMG" && !dashing)
         {
             Damage();
         }
@@ -73,10 +76,12 @@ public class playerHealth : MonoBehaviour
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<PlayerInput>().enabled = false;
         wick.SetActive(false);
         slider.value = 0f;
         playerDeath.Play();
- 
+        
+
         Invoke("RestartLevel", 1f);
     }
 

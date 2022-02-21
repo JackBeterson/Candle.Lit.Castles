@@ -12,7 +12,7 @@ public class playerMovement : MonoBehaviour
 
     private float speed = 3.5f;
     private float jumpingPower = 7f;
-    private float horizontal;
+    public float horizontal;
 
     void Update()
     {
@@ -46,8 +46,8 @@ public class playerMovement : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
-        GameObject.Find("Player").GetComponent<playerDash>().dashPower = horizontal;
-        GameObject.Find("Player").GetComponent<playerHealth>().knockbackPower = horizontal;
+        GameObject.Find("Player").GetComponent<playerDash>().dashPower = Mathf.Sign(horizontal);
+        GameObject.Find("Player").GetComponent<playerHealth>().knockbackPower = Mathf.Sign(horizontal);
     }
 
     public void Move(InputAction.CallbackContext context)

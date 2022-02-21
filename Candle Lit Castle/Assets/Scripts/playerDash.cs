@@ -43,18 +43,18 @@ public class playerDash : MonoBehaviour
 
             GetComponent<playerMovement>().enabled = false;
             dashHitbox.SetActive(true);
-            playerHurtbox.SetActive(false);
 
             animator.SetBool("Dash", true);
             hasTouchedGround = false;
             dashReady = false;
+            GameObject.Find("Player").GetComponent<playerHealth>().dashing = true;
 
             dashTrail.Play();
             candle.color = blue;
             render.material.SetColor("_Color", blue);
 
             dashCoolCounnter = 1.25f;
-            Invoke("DashReset", .25f);
+            Invoke("DashReset",.25f);
         }
     }
 
@@ -64,10 +64,10 @@ public class playerDash : MonoBehaviour
 
         GetComponent<playerMovement>().enabled = true;
         dashHitbox.SetActive(false);
-        playerHurtbox.SetActive(true);
 
         animator.SetBool("Dash", false);
-        
+        GameObject.Find("Player").GetComponent<playerHealth>().dashing = false;
+
         dashTrail.Stop();
     }
 }
