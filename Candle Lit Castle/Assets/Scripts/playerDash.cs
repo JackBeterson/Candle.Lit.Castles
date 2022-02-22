@@ -9,14 +9,18 @@ public class playerDash : MonoBehaviour
     [SerializeField] private ParticleSystem dashTrail;
     [SerializeField] private Renderer render;
     [SerializeField] private Animator animator;
-    [SerializeField] private Rigidbody2D rb;
+    private Rigidbody2D rb;
     [SerializeField] private Color red;
     [SerializeField] private Color blue;
-
     private bool dashReady = true;
     public bool hasTouchedGround = true;
     public float dashPower = 1f;
     private float dashCoolCounnter;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
