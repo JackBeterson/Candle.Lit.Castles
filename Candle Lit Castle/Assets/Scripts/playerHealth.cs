@@ -23,7 +23,7 @@ public class playerHealth : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Insta")
+        if (other.tag == "Insta" && !dashing)
         {
             Death();
         }

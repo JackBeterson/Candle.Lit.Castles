@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 5300483349482027995}
   m_Layer: 0
   m_Name: Slime
-  m_TagString: OneDMG
+  m_TagString: Insta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
