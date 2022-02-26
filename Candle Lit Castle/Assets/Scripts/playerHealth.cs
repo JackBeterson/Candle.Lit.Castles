@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
@@ -75,6 +76,9 @@ public class playerHealth : MonoBehaviour
     private void Death()
     {
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        FindObjectOfType<audioManager>().Play("Death");
+
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<PlayerInput>().enabled = false;
         wick.SetActive(false);

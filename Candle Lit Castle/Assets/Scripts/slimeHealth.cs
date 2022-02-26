@@ -20,6 +20,7 @@ public class slimeHealth : MonoBehaviour
 
     private void Death()
     {
+        FindObjectOfType<audioManager>().Play("Death");
         slimeDeath.Play();
         GetComponent<slimeMovement>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;

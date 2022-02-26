@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4672816688149725074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4672816688149725072}
+  - component: {fileID: 4672816688149725073}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4672816688149725072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672816688149725074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4672816688149725073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672816688149725074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a525c5f783b0b21479c95e2b10177bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Death
+    clip: {fileID: 8300000, guid: e39edd5dd141e5e47b91a72ce6a400f3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
+  - name: Jump
+    clip: {fileID: 8300000, guid: cf150a338696566489935804a4199103, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
+  - name: PickUp
+    clip: {fileID: 8300000, guid: baf305bad2b54ca43a9ba176c3a8d8d4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
+  - name: Dash
+    clip: {fileID: 8300000, guid: 219e006ef21b18a47a3cdf19b2654d97, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
+  - name: SlimeJump
+    clip: {fileID: 8300000, guid: 4626d5f010347d04bbe40493b0ff2ee1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
+  - name: Music
+    clip: {fileID: 8300000, guid: 26f90a636116fcd43b2435823f3e393e, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    group: {fileID: -1054933913559910979, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}

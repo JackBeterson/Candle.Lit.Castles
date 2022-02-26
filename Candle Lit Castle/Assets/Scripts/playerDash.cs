@@ -17,7 +17,7 @@ public class playerDash : MonoBehaviour
     public float dashPower = 1f;
     private float dashCoolCounnter;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -41,6 +41,8 @@ public class playerDash : MonoBehaviour
     {
         if (context.performed && dashReady)
         {
+            if (rb == null)
+                return;
             rb.velocity = new Vector2(10f * dashPower, 0f);
 
             rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
@@ -53,6 +55,7 @@ public class playerDash : MonoBehaviour
             dashReady = false;
             GameObject.Find("Player").GetComponent<playerHealth>().dashing = true;
 
+            FindObjectOfType<audioManager>().Play("Dash");
             dashTrail.Play();
             candle.color = blue;
             render.material.SetColor("_Color", blue);

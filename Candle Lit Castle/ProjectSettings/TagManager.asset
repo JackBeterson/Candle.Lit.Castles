@@ -20,7 +20,7 @@ TagManager:
   - Player
   - Door&Key
   - Colect
-  - 
+  - Tutorial
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2155410515
+    locked: 0
+  - name: Tutorial
+    uniqueID: 4140202061
     locked: 0

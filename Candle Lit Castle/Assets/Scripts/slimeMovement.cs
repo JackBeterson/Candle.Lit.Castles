@@ -50,6 +50,7 @@ public class slimeMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(Mathf.Sign(Horizonta() * -8), 7f), ForceMode2D.Impulse);
 
+            FindObjectOfType<audioManager>().Play("SlimeJump");
             jumpCoolCounter = 2f;
         }
     }

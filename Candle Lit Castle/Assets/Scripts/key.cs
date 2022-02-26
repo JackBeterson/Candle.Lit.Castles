@@ -14,6 +14,7 @@ public class key : MonoBehaviour
 
     private void Collected()
     {
+        FindObjectOfType<audioManager>().Play("PickUp");
         GameObject.Find("LockedDoor").GetComponent<lockedDoor>().opened = true;
         GameObject.Find("Door").SetActive(false);
         Destroy(GameObject.Find("Key"));

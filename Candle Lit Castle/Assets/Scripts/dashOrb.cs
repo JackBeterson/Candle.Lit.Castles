@@ -8,6 +8,7 @@ public class dashOrb : MonoBehaviour
     {
         if (other.tag == "PlayerDMG")
         {
+            FindObjectOfType<audioManager>().Play("PickUp");
             GameObject.Find("Player").GetComponent<playerDash>().enabled = true;
             Destroy(GameObject.Find("Dash Orb"));
         }

@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: c8eae2db98a7c4d40a2d600fa64eca3a
+guid: 70befe7e358f6334dacaf0349ec2128d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3795880463930796829
-    second: Health Bar-Sheet_0
+      213: 9169877530624898698
+    second: Slider_0
   - first:
-      213: -4436370625201650768
-    second: Health Bar-Sheet_1
+      213: 5412086268284726026
+    second: Slider_1
   - first:
-      213: 703166786293328543
-    second: Health Bar-Sheet_2
+      213: 2659325523825384439
+    second: Slider_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Health Bar-Sheet_0
+      name: Slider_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
-        width: 46
-        height: 13
+        y: 5
+        width: 40
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +114,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e45f8954d2525bc0800000000000000
-      internalID: -3795880463930796829
+      spriteID: a86bbbea703f14f70800000000000000
+      internalID: 9169877530624898698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Health Bar-Sheet_1
+      name: Slider_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 5
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b61ea59c79b1b40800000000000000
+      internalID: 5412086268284726026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slider_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 46
-        height: 13
+        width: 40
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,29 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b3c0e8db68de62c0800000000000000
-      internalID: -4436370625201650768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Health Bar-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 17
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9aedd2777622c900800000000000000
-      internalID: 703166786293328543
+      spriteID: 7fbddb56972d7e420800000000000000
+      internalID: 2659325523825384439
       vertices: []
       indices: 
       edges: []

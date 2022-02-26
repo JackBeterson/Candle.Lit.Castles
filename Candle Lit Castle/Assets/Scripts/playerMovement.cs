@@ -32,6 +32,7 @@ public class playerMovement : MonoBehaviour
         if (context.performed && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            FindObjectOfType<audioManager>().Play("Jump");
         }
 
         if (context.canceled && rb.velocity.y > 0f)
