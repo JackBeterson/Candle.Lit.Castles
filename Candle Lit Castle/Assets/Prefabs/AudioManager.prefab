@@ -46,42 +46,42 @@ MonoBehaviour:
   sounds:
   - name: Death
     clip: {fileID: 8300000, guid: e39edd5dd141e5e47b91a72ce6a400f3, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
   - name: Jump
     clip: {fileID: 8300000, guid: cf150a338696566489935804a4199103, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
   - name: PickUp
     clip: {fileID: 8300000, guid: baf305bad2b54ca43a9ba176c3a8d8d4, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
   - name: Dash
     clip: {fileID: 8300000, guid: 219e006ef21b18a47a3cdf19b2654d97, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
   - name: SlimeJump
     clip: {fileID: 8300000, guid: 4626d5f010347d04bbe40493b0ff2ee1, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 586236416054709133, guid: e7bab3f6315950c448f8247bb19d90b1, type: 2}
   - name: Music
     clip: {fileID: 8300000, guid: 26f90a636116fcd43b2435823f3e393e, type: 3}
-    volume: 0.2
+    volume: 0.1
     pitch: 1
     loop: 1
     source: {fileID: 0}
